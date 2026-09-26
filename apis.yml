@@ -1,23 +1,51 @@
 aid: assetmapllc
+
 name: Assetmapllc
-description: 'Assetmapllc is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Assetmapllc is a company identified in the API Evangelist secondary-market harvest. It appears to operate in the real estate data aggregation space, providing mapping and analytics services for property assets. The company’s public presence is limited, with no readily discoverable official website or developer portal. This stub will be enriched as more information becomes available through further profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/assetmapllc/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- RealEstate
+- DataAnalytics
+- Mapping
+- Property
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/assetmapllc-hosts.yml
+- type: Vendors
+  url: vendors/assetmapllc-vendors.yml
+- type: DomainSecurity
+  url: security/assetmapllc-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/assetmapllc
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
